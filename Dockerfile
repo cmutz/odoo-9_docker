@@ -41,9 +41,7 @@ RUN touch /var/log/odoo/odoo-server.log
 RUN chown odoo:root /var/log/odoo/odoo-server.log
 RUN chown odoo: /etc/odoo-server.conf
 RUN chmod 640 /etc/odoo-server.conf
-
-
-
+EXPOSE 22 80 8069 443
 
 #RUN git clone https://github.com/cmutz/postint /home/docker/postint
 #RUN chmod 755 /home/docker/postint/install_postint.sh
